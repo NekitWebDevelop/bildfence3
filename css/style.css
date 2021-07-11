@@ -759,6 +759,9 @@ iframe{
     .all-fence{
         left: 13%;
     }
+    .header-inner{
+        margin-bottom: 100px;
+    }
 }
 
 
