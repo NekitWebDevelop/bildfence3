@@ -1,0 +1,95 @@
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+
+
+.owl-carousel { margin-top: 47px;}
+
+.owl-nav { position: absolute; left: 517px; top: 300px; z-index: 50; }
+
+.owl-nav span { display: none !important; }
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev { width: 74px; height: 25px; margin: 0 40px 0 0; cursor: pointer; display: block; }
+
+.owl-carousel .owl-nav button.owl-prev { background: url("../img/arr.svg") no-repeat center !important; position: absolute; left: 0; top: 0; transform: scale(-1,-1); }
+
+.owl-carousel .owl-nav button.owl-next { background: url("../img/arr.svg") no-repeat center !important; position: absolute; left: 110px; top: 0; }
+
+.owl-carousel .owl-nav button.disabled { opacity: 0.5; cursor: default; }
+
+.carousel-item { display: table; width: 100%; }
+
+.carousel-item-lf { width: 447px; display: table-cell; }
+
+.carousel-item-lf img { border-radius: 10px; overflow: hidden; width: 100%; }
+
+.carousel-item-rt { padding: 0 0 0 70px; display: table-cell; vertical-align: top; position: relative; }
+
+.carousel-item-rt-h3 { font: 500 40px/47px 'Open Sans', sans-serif; color: #2C7BF0; padding: 57px 0 0; margin: 0 0 30px; }
+
+.carousel-item-rt-txt { font: 400 22px/33px 'Open Sans', sans-serif; color: #000; }
+
+.carousel-item-rt-num { position: absolute; bottom: 0; left: 70px; }
+
+.carousel-item-rt-num b { font: 700 48px/50px 'Open Sans', sans-serif; display: inline-block; color: #2C7BF0; }
+
+.carousel-item-rt-num i { background: #737373; height: 2px; width: 50px; display: inline-block; margin: 24px 3px 0; vertical-align: top; }
+
+.carousel-item-rt-num span { font: 400 30px/30px 'Open Sans', sans-serif; display: inline-block; margin: 10px 0 0; color: #737373; vertical-align: top; }
+
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+    .carousel-item-rt-txt{
+        line-height: 150%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container{
+        max-width: 720px;
+    }
+    .carousel-item-rt-txt{
+        margin-bottom: 40px;
+        line-height: 150%;
+        font-size: 16px;
+    }
+    .carousel-item-lf{
+        width: 354px;
+        height: 328px;
+    }
+    .carousel-item-rt{
+        padding: 0 0 0 30px;
+    }
+    
+    .carousel-item-rt-num{
+        margin-top: 10px;
+        top: 270px;
+        left: 20px;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        top: -10px;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        top: -10px;
+    }
+}
+
+.@media screen and (max-width: 720px) {
+    .container{
+        width: 576px;
+    }
+    .carousel-item-lf img{
+        width: 500px;
+    }
+    .carousel-item-rt-txt{
+        position: absolute;
+        left: 500px;
+        top:  500px;
+    }
+}
