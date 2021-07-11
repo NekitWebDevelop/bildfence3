@@ -102,6 +102,10 @@ section{
     transition: 0.3s;
 }
 
+.phone-call{
+	display: none;
+}
+
 .menu-burger__header{
     display: none;
 }
@@ -758,6 +762,17 @@ iframe{
     }
     .header-inner{
         margin-bottom: 100px;
+    }
+    .phone-call{
+        margin-top: 50px;
+        display: block;
+    }
+    .phone-call a{
+        color: #2C7BF0;
+        font-weight: 600;
+    }
+    .phone-call a:hover{
+        color: #1C36D9;
     }
 }
 
